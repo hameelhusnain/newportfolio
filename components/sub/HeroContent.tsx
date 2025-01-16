@@ -11,13 +11,13 @@ const HeroContent = () => {
         <div className='flex flex-col h-full w-full gap-5 justify-center m-auto text-share'>
             <motion.div
             variants={slideInFromTop}
-            className='welcome-box py-[15px] px-[4px] border border-[#7042f88b] capacity-[0.9]'
+            className='welcome-box py-[15px] px-[4px] border border-[#7042f88b] opacity-[0.9]'
             >
+              {/* <SparklesIcons className='text-[#b49bff] mr-[10px] h-5 w-5'/> */}
+              <h1></h1>
 
             </motion.div>
-
         </div>
-
     </motion.div>
   )
 }
