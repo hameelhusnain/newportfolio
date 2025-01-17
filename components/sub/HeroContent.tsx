@@ -14,7 +14,7 @@ const HeroContent = () => {
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-share'>
             <motion.div
             variants={slideInFromTop}
-            className='Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[2.0]'
+            className='Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[2.0]'
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5"/>
               <h1 className='Welcome-text text-w text-[13px]'>
