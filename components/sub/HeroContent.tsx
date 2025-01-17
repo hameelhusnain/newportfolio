@@ -34,6 +34,12 @@ const HeroContent = () => {
             >
               I&apos;m a fullstack developer with a passion for creating beautiful and functional websites. I specialize in React, Next.js, and Tailwind CSS. Checkout my skills and projects below!
             </motion.p>
+            <motion.a
+            variants={slideInFromLeft(1)}
+            className='py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]'
+            >
+              Learn more!
+            </motion.a>
         </div>
     </motion.div>
   )
