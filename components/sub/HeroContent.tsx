@@ -32,6 +32,7 @@ const HeroContent = () => {
               variants={slideInFromLeft(0.8)}
               className='text-lg text-gray-400 my-5 max-w-[600px]'
             >
+              I&apos;m a fullstack developer with a passion for creating beautiful and functional websites. I specialize in React, Next.js, and Tailwind CSS. Checkout my skills and projects below!
             </motion.p>
         </div>
     </motion.div>
