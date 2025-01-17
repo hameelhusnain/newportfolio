@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
 import { motion } from 'framer-motion'
-import { slideInFromLeft, slideInFromTop } from '@/utils/motion'
+import { slideInFromLeft, slideInFromTop, slideInFromRight } from '@/utils/motion'
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import Image from 'next/image';
 const HeroContent = () => {
   return (
     <motion.div
@@ -41,6 +42,17 @@ const HeroContent = () => {
               Learn more!
             </motion.a>
         </div>
+        <motion.div
+        variants={slideInFromRight(0.8)}
+        className='w-full h-full flex justify-center items-center'
+        >
+          <Image
+          src='/mainIconsdark.svg'
+          alt="work icons"
+          width={650}
+          height={650}
+          />
+        </motion.div>
     </motion.div>
   )
 }
