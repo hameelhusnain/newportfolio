@@ -13,10 +13,10 @@ const HeroContent = () => {
         <div className='h-full w-full flex flex-col gap-5 justify-center m-auto text-share'>
             <motion.div
             variants={slideInFromTop}
-            className='welcome-box py-[15px] px-[4px] border border-[#7042f88b] opacity-[2.0]'
+            className='welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-[2.0]'
             >
               <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5"/>
-              <h1 className='welcome-text text-[13px]'>
+              <h1 className='welcome-texthite text-w text-[13px]'>
                 Fullstack Developer Portfolio
               </h1>
 
