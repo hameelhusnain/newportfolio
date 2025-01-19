@@ -20,9 +20,24 @@ useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 15;
 })
   return (
-    <Points positions={sphere} stride={3} ref={ref}>
-        <PointMaterial transparent color="#ffffff" size={0.005} sizeAttenuation={true} depthWrite={false} />
-    </Points>
+    <group rotation={[0, 0, Math.PI / 4]}>
+        <Points>
+            ref={ref}
+            positions={sphere}
+            stride={3}
+            frustumCulled
+            {...props}
+
+            <PointMaterial
+            transparent
+            color="$fff"
+            size={0.02}
+            sizeAttenuation={true}
+            dethwrite={false}
+            />     
+        </Points>
+
+    </group>
   )
 }
 
