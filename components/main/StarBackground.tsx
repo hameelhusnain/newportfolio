@@ -1,7 +1,4 @@
 'use client';
-
-
-
 import React, {useState, useRef, Suspense} from 'react';
 import {Canvas, useFrame} from '@react-three/fiber';
 import {Points, PointMaterial, Preload} from '@react-three/drei';
@@ -41,4 +38,8 @@ useFrame((state, delta) => {
   )
 }
 
-export default StarBackground
+const StarCanvas = () => (
+
+)
+
+export default StarCanvas
