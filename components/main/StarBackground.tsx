@@ -18,22 +18,15 @@ useFrame((state, delta) => {
 });
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-        <Points>
-            ref={ref}
-            positions={sphere}
-            stride={3}
-            frustumCulled
-            {...props}
-
-            <PointMaterial
-            transparent
-            color="#fff"
-            size={0.02}
-            sizeAttenuation={true}
-            dethwrite={false}
-            />     
-        </Points>
-
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled {...props}>
+        <PointMaterial
+          transparent
+          color="#fff"
+          size={0.02}
+          sizeAttenuation={true}
+          depthWrite={false}
+        />
+      </Points>
     </group>
   );
 };
