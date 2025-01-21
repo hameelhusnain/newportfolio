@@ -21,7 +21,7 @@ const StarBackground = (props: any) => {
 
 
   return (
-    <Group {...(props as GroupProps)} rotation={[0.0, Math.PI / 4, 0]}>
+    <group {...(props as GroupProps)} rotation={[0.0, Math.PI / 4, 0]}>
     <Points
         ref={ref}
         positions={sphere}
@@ -37,7 +37,7 @@ const StarBackground = (props: any) => {
             depthWrite={false}
         />
     </Points>
-</Group>
+</group>
 
   );
 };
