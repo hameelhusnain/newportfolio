@@ -15,7 +15,7 @@ const StarBackground = (props: any) => {
 useFrame((state, delta) => {
     ref.current.rotation.y -= delta / 10;
     ref.current.rotation.x -= delta / 15;
-})
+});
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
         <Points>
@@ -35,16 +35,17 @@ useFrame((state, delta) => {
         </Points>
 
     </group>
-  )
-}
+  );
+};
 
 const StarCanvas = () => (
   <div className='w-full h-auto inset-0 z-[20]'>
-    <canvas camera={{position: [0, 0, 1]}}>
+    <Canvas camera={{ position: [0, 0, 1] }}>
       <Suspense fallback={null}>
-        <StarBackground
+        <StarBackground />
       </Suspense>
-    </canvas>
+      <Preload all />
+    </Canvas>
   </div>
-)
+);
 export default StarCanvas
