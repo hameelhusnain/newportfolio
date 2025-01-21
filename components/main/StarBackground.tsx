@@ -39,7 +39,12 @@ useFrame((state, delta) => {
 }
 
 const StarCanvas = () => (
-
+  <div className='w-full h-auto inset-0 z-[20]'>
+    <canvas camera={{position: [0, 0, 1]}}>
+      <Suspense fallback={null}>
+        <StarBackground
+      </Suspense>
+    </canvas>
+  </div>
 )
-
 export default StarCanvas
