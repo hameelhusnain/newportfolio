@@ -5,9 +5,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
+import { GroupProps } from '@react-three/fiber';
+
 
 const StarBackground = (props: any) => {
-  const ref: any = useRef(null);
+  const ref: any = useRef();
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
@@ -19,7 +21,7 @@ const StarBackground = (props: any) => {
 
 
   return (
-    <group rotation={[0.0, Math.PI / 4, 0]}>
+    <Group {...(props as GroupProps)} rotation={[0.0, Math.PI / 4, 0]}>
     <Points
         ref={ref}
         positions={sphere}
@@ -35,7 +37,7 @@ const StarBackground = (props: any) => {
             depthWrite={false}
         />
     </Points>
-</group>
+</Group>
 
   );
 };
