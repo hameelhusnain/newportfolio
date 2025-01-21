@@ -27,7 +27,7 @@ useFrame((state, delta) => {
 
             <PointMaterial
             transparent
-            color="$fff"
+            color="#fff"
             size={0.02}
             sizeAttenuation={true}
             dethwrite={false}
