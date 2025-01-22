@@ -3,6 +3,7 @@
 import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
+import * as THREE from "three";
 // @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
@@ -21,7 +22,7 @@ const StarBackground = (props: any) => {
   });
 
   return (
-    <group rotation={[0, Math.PI / 4, 0]}>
+    <Group rotation={[0, Math.PI / 4, 0]}>
       <Points
         ref={ref}
         positions={sphere}
@@ -37,7 +38,7 @@ const StarBackground = (props: any) => {
           depthWrite={false}
         />
       </Points>
-    </group>
+    </Group>
   );
 };
 
