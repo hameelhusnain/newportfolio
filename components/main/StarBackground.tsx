@@ -8,7 +8,7 @@ import * as THREE from "three";
 import * as random from "maath/random/dist/maath-random.esm";
 
 const StarBackground = (props: any) => {
-  const ref = useRef<any>();
+  const ref: any = useRef();
   const [sphere] = useState(() =>
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
@@ -22,7 +22,8 @@ const StarBackground = (props: any) => {
   });
 
   return (
-    <Group rotation={[0, Math.PI / 4, 0]}>
+    // Use the `group` element from @react-three/fiber
+    <group rotation={[0, Math.PI / 4, 0]}>
       <Points
         ref={ref}
         positions={sphere}
@@ -38,7 +39,7 @@ const StarBackground = (props: any) => {
           depthWrite={false}
         />
       </Points>
-    </Group>
+    </group>
   );
 };
 
