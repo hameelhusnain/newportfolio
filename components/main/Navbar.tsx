@@ -12,10 +12,11 @@ const Navbar = () => {
           height={70} 
           className='curosor-pointer hover:animate-slowspin'
           />
-         <span>
+         <span className='font-bold ml-[10px] hidden m-block text-gray-300'>
           Hhb Dev.
          </span>
         </a>
+      
 
       </div>
     </div>
