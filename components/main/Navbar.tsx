@@ -19,7 +19,7 @@ const Navbar = () => {
          </span>
         </a>
       <div className='w-[500px] h-full flex flex-row items-center justify-between md:mr-20'>
-        <div className='flex flex-row justify-between border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
+        <div className='flex flex-row justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
           <a href='#about-me' className='cursor-pointer'>About me</a>
           <a href='#skills' className='cursor-pointer'>Skills</a>
           <a href='#projects' className='cursor-pointer'>Projects</a>
@@ -31,8 +31,8 @@ const Navbar = () => {
             key={social.name}
             src={social.src}
             alt={social.name}
-            width={30}
-            height={30}
+            width={24}
+            height={24}
           />
           )}
         </div>
