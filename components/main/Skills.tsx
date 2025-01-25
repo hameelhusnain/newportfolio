@@ -6,8 +6,8 @@ import {
     Skill_data,
   } from "@/constants";
   import React from "react";
-  import SkillDataProvider from "@/components/sub/SkillDataProvider";
-  import SkillText from "../sub/SkillText";
+  import SkillDataProvider from "../sub/SkillDataProvider";
+  import SkillText from "@/components/sub/SkillText";
   
   const Skills = () => {
     return (
