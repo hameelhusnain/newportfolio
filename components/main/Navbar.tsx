@@ -1,3 +1,5 @@
+import { Socials } from "@/constants";
+import Image from "next/image";
 import React from 'react'
 
 const Navbar = () => {
@@ -21,11 +23,19 @@ const Navbar = () => {
           <a href='#about-me' className='cursor-pointer'>About me</a>
           <a href='#skills' className='cursor-pointer'>Skills</a>
           <a href='#projects' className='cursor-pointer'>Projects</a>
-
         </div>
-
       </div>
-
+        <div className='flex flex-row gap-5'>
+          {Socials.map((social) =>
+          <Image
+            key={social.name}
+            src={social.src}
+            alt={social.name}
+            width={30}
+            height={30}
+          />
+          )}
+        </div>
       </div>
     </div>
   )
